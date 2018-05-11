@@ -1,7 +1,7 @@
 <template lang="pug">
 .container
   swiper.slider-wrap(
-    autoplay,
+  autoplay,
     indicator-dots,
     circular,
     indicator-color="rgba(255, 255, 255, .3)",
@@ -66,7 +66,7 @@ export default {
 <style lang="less" scoped>
 .slider-wrap {
   width: 100%;
-  height: 200px;
+  height: 400px;
 }
 .slider-item {
   position: relative;
@@ -77,12 +77,12 @@ export default {
 .slider-title {
   max-width: 90vw;
   position: absolute;
-  top: 10px;
+  top: 20px;
   right: 0;
   background-color: rgba(0, 0, 0, .3);
   color: #fff;
-  padding: 2px 6px;
-  font-size: 18px;
+  padding: 4px 12px;
+  font-size: 36px;
 }
 .slider-img {
   width: 100%;
@@ -90,14 +90,14 @@ export default {
 }
 
 .news-wrap {
-  padding: 0 10px;
+  padding: 0 20px;
 }
 
 .nomore {
   width: 100%;
-  line-height: 50px;
+  line-height: 100px;
   text-align: center;
-  font-size: 14px;
+  font-size: 28px;
   color: #ddd;
 }
 </style>

@@ -70,44 +70,44 @@ export default {
 <style lang="less">
 .topic-title {
   width: 100%;
-  padding: 10px;
+  padding: 20px;
   box-sizing: border-box;
-  font-size: 22px;
+  font-size: 44px;
 }
 .topic-num {
-  font-size: 12px;
+  font-size: 24px;
   position: absolute;
-  right: 10px;
-  top: 10px;
+  right: 20px;
+  top: 20px;
 }
 .topic-info {
   display: flex;
   align-items: center;
   width: 100%;
-  padding: 0 10px 10px;
+  padding: 0 20px 20px;
   box-sizing: border-box;
   border-bottom: 1px solid #eee;
 }
 .topic-info-item {
-  margin-right: 10px;
-  font-size: 12px;
+  margin-right: 20px;
+  font-size: 24px;
   color: #aaa;
   display: flex;
   align-items: center;
 }
 .topic-info-icon {
-  width: 15px;
-  height: 15px;
-  margin-right: 4px;
+  width: 30px;
+  height: 30px;
+  margin-right: 8px;
 }
 .topic-content {
   width: 100%;
-  font-size: 16px;
-  padding: 10px;
+  font-size: 32px;
+  padding: 20px;
   line-height: 1.6;
   border-bottom: 1px solid #eee;
   box-sizing: border-box;
-  min-height: 100px;
+  min-height: 200px;
 }
 
 .comment-wrap {

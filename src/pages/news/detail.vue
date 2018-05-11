@@ -96,53 +96,53 @@ export default {
   width: 100%;
   color: #fff;
   background-color: @primary-color;
-  padding: 10px;
+  padding: 20px;
   box-sizing: border-box;
 }
 .news-title {
-  font-size: 22px;
+  font-size: 44px;
 }
 .auth-info {
-  font-size: 12px;
-  margin-top: 10px;
+  font-size: 24px;
+  margin-top: 20px;
   align-self: flex-end;
 }
 .news-content {
   width: 100%;
   box-sizing: border-box;
-  padding: 10px;
-  font-size: 16px;
+  padding: 20px;
+  font-size: 32px;
   line-height: 1.6;
 }
 
 .related-title {
-  font-size: 18px;
+  font-size: 36px;
   font-weight: 600;
   align-self: flex-start;
-  border-left: 4px solid @primary-color;
-  padding: 2px 5px;
+  border-left: 8px solid @primary-color;
+  padding: 4px 10px;
 }
 
 .news-wrap {
   width: 100%;
   box-sizing: border-box;
-  padding: 0 10px;
+  padding: 0 20px;
 }
 
 .comment-btn {
-  width: 55px;
-  height: 55px;
+  width: 110px;
+  height: 110px;
   border-radius: 50%;
   background-color: @primary-color;
   position: fixed;
-  right: 20px;
-  bottom: 20px;
+  right: 40px;
+  bottom: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .comment-icon {
-  width: 40px;
-  height: 40px;
+  width: 80px;
+  height: 80px;
 }
 </style>

@@ -23,7 +23,7 @@ export default {
 <style lang="less" scoped>
 .comment-item {
   width: 100%;
-  padding: 10px;
+  padding: 20px;
   box-sizing: border-box;
   border-bottom: 1px dashed #eee;
 }
@@ -35,20 +35,20 @@ export default {
   align-items: center;
   width: 100%;
   box-sizing: border-box;
-  margin-bottom: 8px;
-  font-size: 15px;
+  margin-bottom: 16px;
+  font-size: 30px;
 }
 .comment-author {
   color: #4769b0;
-  margin-right: 5px;
+  margin-right: 10px;
 }
 .comment-floor {
-  font-size: 12px;
+  font-size: 24px;
   flex: 1;
   text-align: right;
 }
 .comment-content {
   line-height: 1.6;
-  font-size: 16px;
+  font-size: 32px;
 }
 </style>

@@ -23,6 +23,7 @@ export default {
   methods: {
     turn () {
       const { link } = this.news
+      console.log(this.news)
       this.$router.push(link)
     }
   }
@@ -32,14 +33,14 @@ export default {
 <style lang="less" scoped>
 .news-item {
   display: flex;
-  height: 90px;
+  height: 180px;
   align-items: center;
   border-bottom: 1px solid #eee;
 }
 .news-img {
-  width: 100px;
-  height: 75px;
-  margin-right: 10px;
+  width: 200px;
+  height: 150px;
+  margin-right: 20px;
 }
 .news-text {
   flex: 1;
@@ -49,11 +50,11 @@ export default {
   justify-content: space-around;
 }
 .news-title {
-  font-size: 15px;
+  font-size: 30px;
 }
 .news-info {
   color: #aaa;
-  font-size: 12px;
+  font-size: 24px;
   display: flex;
   justify-content: space-between;
 }

@@ -43,37 +43,37 @@ export default {
 
 <style lang="less" scoped>
 .topic-item {
-  padding: 10px 10px 10px 60px;
+  padding: 20px 20px 20px 120px;
   border-bottom: 1px solid #eee;
   position: relative;
 }
 .topic-headimg {
-  width: 40px;
-  height: 40px;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
   position: absolute;
-  left: 10px;
-  top: 15px;
+  left: 20px;
+  top: 30px;
 }
 .topic-title {
-  font-size: 16px;
+  font-size: 32px;
 }
 .topic-info {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 .topic-info-item {
-  margin-left: 10px;
-  font-size: 12px;
+  margin-left: 20px;
+  font-size: 24px;
   color: #aaa;
   display: flex;
   align-items: center;
 }
 .topic-info-icon {
-  width: 15px;
-  height: 15px;
-  margin-right: 4px;
+  width: 30px;
+  height: 30px;
+  margin-right: 8px;
 }
 </style>
