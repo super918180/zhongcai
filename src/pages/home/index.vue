@@ -19,11 +19,10 @@
     home-notice
     white-space
     home-hot
+    white-space
 </template>
 
 <script>
-  import wx from 'wx'
-  import { mapState, mapActions } from 'vuex'
   import homePosition from '@/components/home-position'
   import homeNav from '@/components/home-nav'
   import whiteSpace from '@/components/white-space'
@@ -31,6 +30,23 @@
   import homeHot from '@/components/home-hot'
 
   export default {
+    data: {
+      slides: [
+        {
+          title: 1,
+          image: 'http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg'
+        },
+        {
+          title: 2,
+          image: 'http://img06.tooopen.com/images/20160818/tooopen_sy_175866434296.jpg'
+        },
+        {
+          title: 3,
+          image: 'http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg'
+        }
+
+      ]
+    },
     components: {
       homePosition,
       homeNav,
@@ -38,36 +54,16 @@
       homeNotice,
       homeHot
     },
-    computed: {
-      ...mapState([
-        'slides',
-        'news'
-      ])
-    },
+    computed: {},
     mounted () {
       this.refresh()
     },
     onPullDownRefresh () {
       this.refresh()
     },
-    // onReachBottom () {
-    //   this.loadmore()
-    // },
     methods: {
-      ...mapActions([
-        'getSlides',
-        'getNewsList'
-      ]),
       async refresh () {
-        await Promise.all([
-          this.getNewsList(true),
-          this.getSlides()
-        ])
-        wx.stopPullDownRefresh()
       }
-      // loadmore () {
-      //   this.getNewsList()
-      // }
     }
   }
 </script>

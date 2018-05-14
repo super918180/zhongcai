@@ -34,20 +34,24 @@
     display: flex;
     width: 100%;
     height: 220px;
+    padding: 30px 0;
     .hot-left {
       flex: 1;
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: space-between;
+      justify-content: space-around;
       box-sizing: border-box;
+      border-right: 1px solid #eee;
       .left-header {
         display: flex;
+        align-items: baseline;
         .header-icon {
           width: 50px;
           height: 40px;
         }
         .header-text {
+          margin: 0 20px 0 20px;
           font-size: 30px;
         }
         .header-des {
@@ -63,6 +67,9 @@
     .hot-right {
       height: 100%;
       flex: 1;
+      .right-up {
+        border-bottom: 1px solid #eee;
+      }
       .right-up, .right-down {
         height: 50%;
         display: flex;
@@ -71,6 +78,14 @@
         box-sizing: border-box;
       }
       .right-left {
+        width: 50%;
+        height: 80px;
+        margin-left: 30px;
+        box-sizing: border-box;
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+        flex-direction: column;
         .right-text {
           font-size: 30px;
         }
