@@ -1,38 +1,39 @@
 module.exports = [
   {
-    path: '/pages/news/list',
-    name: 'NewsList',
+    path: '/pages/home/index',
+    name: 'home',
     config: {
+      navigationBarTitleText: '微果酷坊+',
       enablePullDownRefresh: true
     }
   },
   {
-    path: '/pages/news/detail',
-    name: 'NewsDetail',
+    path: '/pages/category/index',
+    name: 'category',
     config: {
-      navigationBarTitleText: '文章详情'
+      navigationBarTitleText: '分类'
     }
   },
   {
-    path: '/pages/news/comment',
-    name: 'NewsComment',
+    path: '/pages/cart/index',
+    name: 'cart',
     config: {
-      navigationBarTitleText: '评论列表'
+      navigationBarTitleText: '购物车'
     }
   },
   {
-    path: '/pages/quanzi/list',
-    name: 'QuanziList',
+    path: '/pages/order/index',
+    name: 'order',
     config: {
-      navigationBarTitleText: '圈子',
+      navigationBarTitleText: '订单',
       enablePullDownRefresh: true
     }
   },
   {
-    path: '/pages/quanzi/detail',
-    name: 'QuanziDetail',
+    path: '/pages/mine/index',
+    name: 'mine',
     config: {
-      navigationBarTitleText: '圈子详情'
+      navigationBarTitleText: '我的'
     }
   }
 ]
