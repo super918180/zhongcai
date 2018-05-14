@@ -6,7 +6,7 @@
       img.positon-right(src="/static/assets/icon-down.png")
     .positon-input-container
       img.positon-find(src="/static/assets/find.png")
-      input.positon-input
+      input.positon-input(placeholder="搜索提货点")
 </template>
 
 <script>
@@ -42,8 +42,8 @@
     .positon-input-container {
       position: relative;
       .positon-find {
-        width: 25px;
-        height: 25px;
+        width: 40px;
+        height: 40px;
         position: absolute;
         z-index: 2;
         top: 50%;
@@ -56,7 +56,8 @@
         height: 54px;
         border-radius: 27px;
         background: #eee;
-        padding-left: 50px;
+        padding-left: 70px;
+        font-size: 28px;
       }
     }
   }
