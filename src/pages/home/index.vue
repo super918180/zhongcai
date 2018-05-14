@@ -1,5 +1,6 @@
 <template lang="pug">
   .container
+    homne-position
     swiper.slider-wrap(
     autoplay,
     indicator-dots,
@@ -12,16 +13,30 @@
         .slider-item(@click="$router.push(slide.link)")
           .slider-title {{slide.title}}
           img.slider-img(:src="slide.image", mode="aspectFill")
+    white-space
+    home-nav
+    white-space
+    home-notice
+    white-space
+    home-hot
 </template>
 
 <script>
   import wx from 'wx'
   import { mapState, mapActions } from 'vuex'
-  import newsItem from '@/components/news-item'
+  import homePosition from '@/components/home-position'
+  import homeNav from '@/components/home-nav'
+  import whiteSpace from '@/components/white-space'
+  import homeNotice from '@/components/home-notice'
+  import homeHot from '@/components/home-hot'
 
   export default {
     components: {
-      newsItem
+      homePosition,
+      homeNav,
+      whiteSpace,
+      homeNotice,
+      homeHot
     },
     computed: {
       ...mapState([

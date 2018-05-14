@@ -17,11 +17,9 @@
 <script>
   import wx from 'wx'
   import { mapState, mapActions } from 'vuex'
-  import newsItem from '@/components/news-item'
 
   export default {
     components: {
-      newsItem
     },
     computed: {
       ...mapState([
