@@ -1,6 +1,6 @@
 <template lang="pug">
   .container
-    homne-position
+    home-position
     swiper.slider-wrap(
     autoplay,
     indicator-dots,
@@ -20,6 +20,8 @@
     white-space
     home-hot
     white-space
+    home-recommend
+    white-space
 </template>
 
 <script>
@@ -28,6 +30,7 @@
   import whiteSpace from '@/components/white-space'
   import homeNotice from '@/components/home-notice'
   import homeHot from '@/components/home-hot'
+  import homeRecommend from '@/components/home-recommend'
 
   export default {
     data: {
@@ -52,7 +55,8 @@
       homeNav,
       whiteSpace,
       homeNotice,
-      homeHot
+      homeHot,
+      homeRecommend
     },
     computed: {},
     mounted () {
